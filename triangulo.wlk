@@ -4,25 +4,13 @@ class Poligono{
     var property c  
 
 method esEquilatero(){
-    if(a == b and b == c){
-        return "Es equilatero"
-    }else{
-      return "No es equilatero"
-    }
+    return (a == b and b == c)
 }
 method esIsoceles(){
-  if(a == b and b != c or b == c and b != a or a == c and c != b){
-    return "Es isoceles"
-  }else{
-    return "No es isoceles"
+    return (a == b and b != c or b == c and b != a or a == c and c != b)
   }
 
-}
 method esEscaleno(){
-  if(a != b and b != c){
-    return "Es escaleno"
-  }else{
-    return "No es escaleno"
-  }
+    return (a != b and b != c)
 }
 }
